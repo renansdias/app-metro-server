@@ -131,30 +131,29 @@ setTimeout(function() {
 		}
 	});
 
-	graph.addEdge(vertex1, vertex2);
-	graph.addEdge(vertex1, vertex3);
-	graph.addEdge(vertex1, vertex6);
-	graph.addEdge(vertex2, vertex3);
-	graph.addEdge(vertex2, vertex4);
-	graph.addEdge(vertex3, vertex4);
-	graph.addEdge(vertex3, vertex5);
-	graph.addEdge(vertex4, vertex5);
-	graph.addEdge(vertex4, vertex7);
-	graph.addEdge(vertex5, vertex8);
-	graph.addEdge(vertex6, vertex1);
-	graph.addEdge(vertex7, vertex9);
-	graph.addEdge(vertex7, vertex10);
-	graph.addEdge(vertex8, vertex9);
-	graph.addEdge(vertex8, vertex11);
-	graph.addEdge(vertex8, vertex12);
-	graph.addEdge(vertex9, vertex10);
-	graph.addEdge(vertex10, vertex11);
-	graph.addEdge(vertex10, vertex13);
-	graph.addEdge(vertex11, vertex12);
-	graph.addEdge(vertex11, vertex15);
-	graph.addEdge(vertex11, vertex16);
-	graph.addEdge(vertex13, vertex14);
-	graph.addEdge(vertex15, vertex16);
+	graph.addEdge(vertex1, vertex2, 1);
+	graph.addEdge(vertex1, vertex3, 1);
+	graph.addEdge(vertex1, vertex6, 1);
+	graph.addEdge(vertex2, vertex3, 1);
+	graph.addEdge(vertex2, vertex4, 1);
+	graph.addEdge(vertex3, vertex4, 1);
+	graph.addEdge(vertex3, vertex5, 1);
+	graph.addEdge(vertex4, vertex5, 1);
+	graph.addEdge(vertex4, vertex7, 1);
+	graph.addEdge(vertex5, vertex8, 1);
+	graph.addEdge(vertex7, vertex9, 1);
+	graph.addEdge(vertex7, vertex10, 1);
+	graph.addEdge(vertex8, vertex9, 1);
+	graph.addEdge(vertex8, vertex11, 1);
+	graph.addEdge(vertex8, vertex12, 1);
+	graph.addEdge(vertex9, vertex10, 1);
+	graph.addEdge(vertex10, vertex11, 1);
+	graph.addEdge(vertex10, vertex13, 1);
+	graph.addEdge(vertex11, vertex12, 1);
+	graph.addEdge(vertex11, vertex15, 1);
+	graph.addEdge(vertex11, vertex16, 1);
+	graph.addEdge(vertex13, vertex14, 1);
+	graph.addEdge(vertex15, vertex16, 1);
 
 	graph.print();
 
