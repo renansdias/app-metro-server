@@ -1,16 +1,23 @@
+var StationNetwork = require('../lib/station-network');
 var TrainSystem = require('../lib/train-system');
-var trainSystem = new TrainSystem();
 
-var train = {
-	location: {
-		latitude: -23.549373,
-		longitude: -46.623757
-	},
-	direction: 'forward'
-};
+var stationNetwork = new StationNetwork();
+var trainSystem = new TrainSystem(stationNetwork);
 
-var ret = trainSystem.getNextLocationForTrain(train);
+stationNetwork.on('graphBuilt', function() {
+	console.log('Graph was BUILT!!!!');
 
-console.log('Returned location index: ' + ret);
+	var train = {
+		location: {
+			latitude: -23.549373,
+			longitude: -46.623757
+		},
+		direction: 'forward'
+	};
 
-trainSystem.getClosestTrainTo("0", "70");
+	var ret = trainSystem.getNextLocationForTrain(train);
+
+	console.log('Returned location index: ' + ret);
+
+	trainSystem.getClosestTrainTo("0", "10");
+});
