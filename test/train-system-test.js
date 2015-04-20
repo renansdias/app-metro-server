@@ -12,3 +12,5 @@ var train = {
 var ret = trainSystem.getNextLocationForTrain(train);
 
 console.log('Returned location index: ' + ret);
+
+trainSystem.getClosestTrainTo("0", "70");
