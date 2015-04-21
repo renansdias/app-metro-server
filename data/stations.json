@@ -1,8 +1,24 @@
-{_id: 0, name: "Corinthians Itaquera", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [10, 20]}
-{_id: 10, name: "Belém", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [0, 20]}
-{_id: 20, name: "Sé", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [0, 10, 30]}
-{_id: 30, name: "Brás", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [20, 40, 50]}
-{_id: 40, name: "Luz", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [30, 60]}
-{_id: 50, name: "Carrão", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [30, 60]}
-{_id: 60, name: "Tatuapé", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [40, 50, 70]}
-{_id: 70, name: "Paraíso", location: {latitude: 23.345, longitude: 46.34534}, nextStations: [60]}
+{_id: 0, name: "Corinthians Itaquera", lines: ['red'], location: {latitude: -23.542323, longitude: -46.471429}, nextStations: [100]}
+{_id: 100, name: "Arthur Alvim", lines: ['red'], location: {latitude: -23.540440, longitude: -46.484449}, nextStations: [0, 200]}
+{_id: 200, name: "Patriarca", lines: ['red'], location: {latitude: -23.530484, longitude: -46.502672}, nextStations: [100, 300]}
+{_id: 300, name: "Guilhermina Esperança", lines: ['red'], location: {latitude: -23.529022, longitude: -46.516382}, nextStations: [200, 400]}
+{_id: 400, name: "Vila Matilde", lines: ['red'], location: {latitude: -23.531757, longitude: -46.531167}, nextStations: [300, 500]}
+{_id: 500, name: "Penha", lines: ['red'], location: {latitude: -23.533606, longitude: -46.544084}, nextStations: [400, 600]}
+{_id: 600, name: "Carrão", lines: ['red'], location: {latitude: -23.537551, longitude: -46.563847}, nextStations: [500, 700]}
+{_id: 700, name: "Tatuapé", lines: ['red'], location: {latitude: -23.540029, longitude: -46.576614}, nextStations: [600, 800]}
+{_id: 800, name: "Belém", lines: ['red'], location: {latitude: -23.543078, longitude: -46.589811}, nextStations: [700, 900]}
+{_id: 900, name: "Bresser Mooca", lines: ['red'], location: {latitude: -23.546324, longitude: -46.607470}, nextStations: [800, 1000]}
+{_id: 1000, name: "Brás", lines: ['red'], location: {latitude: -23.547701, longitude: -46.615410}, nextStations: [900, 1100]}
+{_id: 1100, name: "Pedro II", lines: ['red'], location: {latitude: -23.549786, longitude: -46.625945}, nextStations: [1000, 1200]}
+{_id: 1200, name: "Sé", lines: ['red'], location: {latitude: -23.550632, longitude: -46.633284}, nextStations: [1100, 1300]}
+{_id: 1300, name: "Anhangabaú", lines: ['red'], location: {latitude: -23.547927, longitude: -46.639324}, nextStations: [1200, 1400]}
+{_id: 1400, name: "República", lines: ['red', 'yellow'], location: {latitude: -23.544347, longitude: -46.642854}, nextStations: [1300, 1500, 1239]}
+{_id: 1500, name: "Santa Cecília", lines: ['red'], location: {latitude: -23.539646, longitude: -46.648927}, nextStations: [1400, 1600]}
+{_id: 1600, name: "Marechal Deodoro", lines: ['red'], location: {latitude: -23.533764, longitude: -46.655986}, nextStations: [1500, 1700]}
+{_id: 1700, name: "Barra Funda", lines: ['red'], location: {latitude: -23.525756, longitude: -46.665792}, nextStations: [1600]}
+{_id: 1239, name: "Luz", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1400]}
+{_id: 1561, name: "Paulista", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1400, 1722]}
+{_id: 1722, name: "Fradique Coutinho", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1561, 1883]}
+{_id: 1883, name: "Faria Lima", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1722, 2044]}
+{_id: 2044, name: "Pinheiros", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1883, 2205]}
+{_id: 2205, name: "Butantã", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [2044]}
