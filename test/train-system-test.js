@@ -24,10 +24,10 @@ setTimeout(function() {
 		// console.log('Next Direction: ' + ret.direction);
 
 		setTimeout(function() {
-			trainSystem.getClosestTrainTo("1700", "1400", function(train) {
-				console.log(train);
+			trainSystem.getClosestTrainTo("500", "1700", function(train) {
+				console.log(JSON.stringify(train));
 				process.exit(0);
 			});
 		}, 5000);
 	});
-}, 5000);
+}, 10000);
