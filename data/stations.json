@@ -16,9 +16,9 @@
 {_id: 1500, name: "Santa Cecília", lines: ['red'], location: {latitude: -23.539646, longitude: -46.648927}, nextStations: [1400, 1600]}
 {_id: 1600, name: "Marechal Deodoro", lines: ['red'], location: {latitude: -23.533764, longitude: -46.655986}, nextStations: [1500, 1700]}
 {_id: 1700, name: "Barra Funda", lines: ['red'], location: {latitude: -23.525756, longitude: -46.665792}, nextStations: [1600]}
-{_id: 1239, name: "Luz", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1400]}
-{_id: 1561, name: "Paulista", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1400, 1722]}
-{_id: 1722, name: "Fradique Coutinho", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1561, 1883]}
-{_id: 1883, name: "Faria Lima", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1722, 2044]}
-{_id: 2044, name: "Pinheiros", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [1883, 2205]}
-{_id: 2205, name: "Butantã", lines: ['yellow'], location: {latitude: 23.345, longitude: 46.34534}, nextStations: [2044]}
+{_id: 1239, name: "Luz", lines: ['yellow'], location: {latitude: -23.538135, longitude: -46.634334}, nextStations: [1400]}
+{_id: 1561, name: "Paulista", lines: ['yellow'], location: {latitude: -23.555016, longitude: -46.662197}, nextStations: [1400, 1722]}
+{_id: 1722, name: "Fradique Coutinho", lines: ['yellow'], location: {latitude: -23.566070, longitude: -46.684427}, nextStations: [1561, 1883]}
+{_id: 1883, name: "Faria Lima", lines: ['yellow'], location: {latitude: -23.567564, longitude: -46.692753}, nextStations: [1722, 2044]}
+{_id: 2044, name: "Pinheiros", lines: ['yellow'], location: {latitude: -23.566512, longitude: -46.703090}, nextStations: [1883, 2205]}
+{_id: 2205, name: "Butantã", lines: ['yellow'], location: {latitude: -23.571508, longitude: -46.709012}, nextStations: [2044]}
