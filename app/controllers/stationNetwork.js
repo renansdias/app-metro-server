@@ -8,7 +8,11 @@ var shortestPath = function(req, res) {
 };
 
 var getStations = function(req, res) {
+	stationNetwork.getStations(function(err, docs) {
+		if (err) res.json(err);
 
+		res.json(docs);
+	});
 }
 
 module.exports = function(app) {
