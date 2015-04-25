@@ -7,9 +7,14 @@ var shortestPath = function(req, res) {
 	res.status(200).json(path);
 };
 
+var getStations = function(req, res) {
+
+}
+
 module.exports = function(app) {
 	var stationNetworkController = {
-		shortestPath: shortestPath
+		shortestPath: shortestPath,
+		getStations: getStations
 	};
 
 	return stationNetworkController;
