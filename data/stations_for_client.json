@@ -1,0 +1,25 @@
+{ "_id" : { "line" : "red", "station" : { "_id" : 0, "name" : "Corinthians Itaquera", "location" : { "latitude" : -23.542323, "longitude" : -46.471429 }, "nextStations" : [ 100 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 100, "name" : "Arthur Alvim", "location" : { "latitude" : -23.54044, "longitude" : -46.484449 }, "nextStations" : [ 0, 200 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 200, "name" : "Patriarca", "location" : { "latitude" : -23.530484, "longitude" : -46.502672 }, "nextStations" : [ 100, 300 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 300, "name" : "Guilhermina Esperança", "location" : { "latitude" : -23.529022, "longitude" : -46.516382 }, "nextStations" : [ 200, 400 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 400, "name" : "Vila Matilde", "location" : { "latitude" : -23.531757, "longitude" : -46.531167 }, "nextStations" : [ 300, 500 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 500, "name" : "Penha", "location" : { "latitude" : -23.533606, "longitude" : -46.544084 }, "nextStations" : [ 400, 600 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 600, "name" : "Carrão", "location" : { "latitude" : -23.537551, "longitude" : -46.563847 }, "nextStations" : [ 500, 700 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 700, "name" : "Tatuapé", "location" : { "latitude" : -23.540029, "longitude" : -46.576614 }, "nextStations" : [ 600, 800 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 800, "name" : "Belém", "location" : { "latitude" : -23.543078, "longitude" : -46.589811 }, "nextStations" : [ 700, 900 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 900, "name" : "Bresser Mooca", "location" : { "latitude" : -23.546324, "longitude" : -46.60747 }, "nextStations" : [ 800, 1000 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1000, "name" : "Brás", "location" : { "latitude" : -23.547701, "longitude" : -46.61541 }, "nextStations" : [ 900, 1100 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1100, "name" : "Pedro II", "location" : { "latitude" : -23.549786, "longitude" : -46.625945 }, "nextStations" : [ 1000, 1200 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1200, "name" : "Sé", "location" : { "latitude" : -23.550632, "longitude" : -46.633284 }, "nextStations" : [ 1100, 1300 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1300, "name" : "Anhangabaú", "location" : { "latitude" : -23.547927, "longitude" : -46.639324 }, "nextStations" : [ 1200, 1400 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1400, "name" : "República", "location" : { "latitude" : -23.544347, "longitude" : -46.642854 }, "nextStations" : [ 1300, 1500, 1239 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1500, "name" : "Santa Cecília", "location" : { "latitude" : -23.539646, "longitude" : -46.648927 }, "nextStations" : [ 1400, 1600 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1600, "name" : "Marechal Deodoro", "location" : { "latitude" : -23.533764, "longitude" : -46.655986 }, "nextStations" : [ 1500, 1700 ] } } }
+{ "_id" : { "line" : "red", "station" : { "_id" : 1700, "name" : "Barra Funda", "location" : { "latitude" : -23.525756, "longitude" : -46.665792 }, "nextStations" : [ 1600 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 1239, "name" : "Luz", "location" : { "latitude" : -23.538135, "longitude" : -46.634334 }, "nextStations" : [ 1400 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 1400, "name" : "República", "location" : { "latitude" : -23.544347, "longitude" : -46.642854 }, "nextStations" : [ 1300, 1500, 1239 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 1561, "name" : "Paulista", "location" : { "latitude" : -23.555016, "longitude" : -46.662197 }, "nextStations" : [ 1400, 1722 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 1722, "name" : "Fradique Coutinho", "location" : { "latitude" : -23.56607, "longitude" : -46.684427 }, "nextStations" : [ 1561, 1883 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 1883, "name" : "Faria Lima", "location" : { "latitude" : -23.567564, "longitude" : -46.692753 }, "nextStations" : [ 1722, 2044 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 2044, "name" : "Pinheiros", "location" : { "latitude" : -23.566512, "longitude" : -46.70309 }, "nextStations" : [ 1883, 2205 ] } } }
+{ "_id" : { "line" : "yellow", "station" : { "_id" : 2205, "name" : "Butantã", "location" : { "latitude" : -23.571508, "longitude" : -46.709012 }, "nextStations" : [ 2044 ] } } }

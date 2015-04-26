@@ -4,7 +4,7 @@ var shortestPath = function(req, res) {
 
 	var path = stationNetwork.shortestPathBetween(origin, destination);
 
-	res.status(200).json(path);
+	res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:8100').json(path);
 };
 
 var getStations = function(req, res) {
