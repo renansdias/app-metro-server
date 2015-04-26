@@ -9,6 +9,7 @@ var server = require('http').createServer(app);
 // *************************
 var createLocationChangeDetectorServer = require('./servers/location-change-detector-server');
 var createIonicAppServer = require('./servers/ionic-app-server');
+// var startLocationUpdaterScript = require('./servers/location-updater-server');
 
 
 var StationNetwork = require('./lib/station-network');
@@ -31,6 +32,11 @@ stationNetwork.on('stationGraphWasBuilt', function() {
 	createLocationChangeDetectorServer({
 		port: 3812
 	});
+
+	// Start train location updater script
+	// startLocationUpdaterScript({
+	// 	port: 3912
+	// });
 
 	server.listen(3700, function() {
 		console.log('Main server is running on port ' + 3700);

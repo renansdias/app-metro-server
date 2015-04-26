@@ -1,6 +1,7 @@
 var TrainLocationUpdater = require('../lib/train-location-updater');
-var trainLocationUpdater = new TrainLocationUpdater();
+
 
 setTimeout(function() {
+	var trainLocationUpdater = new TrainLocationUpdater();
 	trainLocationUpdater.start();
-}, 5000);
+}, 15000);
