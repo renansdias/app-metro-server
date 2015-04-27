@@ -11,4 +11,6 @@ module.exports = function startLocationUpdaterScript(options) {
 	var trainLocationUpdater = new TrainLocationUpdater(options.delay);
 
 	trainLocationUpdater.start();
+
+	console.log('Train Location Updater script is now running...');
 }
