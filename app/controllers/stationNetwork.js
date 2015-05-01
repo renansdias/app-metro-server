@@ -4,14 +4,14 @@ var shortestPath = function(req, res) {
 
 	var path = stationNetwork.shortestPathBetween(origin, destination);
 
-	res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:8100').json(path);
+	res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:4800').json(path);
 };
 
 var getStations = function(req, res) {
 	stationNetwork.getStations(function(err, docs) {
 		if (err) res.json(err);
 
-		res.json(docs);
+		res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:4800').json(docs);
 	});
 }
 

@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 
-app.use(express.static(path.join(__dirname, '../client/')));
+app.use(express.static(path.join(__dirname, '../../client/www')));
 
 var createIonicAppServer = function(options) {
 	var port = options.port || 4800;
