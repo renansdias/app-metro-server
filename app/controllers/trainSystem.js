@@ -6,7 +6,7 @@ var closestTrain = function(req, res) {
 	var destination = req.query.destination;
 
 	trainSystem.getClosestTrainTo(origin, destination, function(train) {
-		res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:8100').json(train);
+		res.status(200).set('Access-Control-Allow-Origin', 'http://localhost:4800').json(train);
 	});
 }
 
