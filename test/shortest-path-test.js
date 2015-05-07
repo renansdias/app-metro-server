@@ -67,15 +67,15 @@ var paraiso = new Vertex('paraiso', {
 	}
 });
 
-graph.addEdge(corinthiansItaquera, belem, 1);
-graph.addEdge(corinthiansItaquera, se, 1);
-graph.addEdge(belem, se, 1);
-graph.addEdge(se, bras, 1);
-graph.addEdge(bras, luz, 1);
-graph.addEdge(bras, carrao, 1);
-graph.addEdge(luz, tatuape, 1);
-graph.addEdge(carrao, tatuape, 1);
-graph.addEdge(tatuape, paraiso, 1);
+graph.addEdge(corinthiansItaquera, belem, 15);
+graph.addEdge(corinthiansItaquera, se, 20);
+graph.addEdge(belem, se, 4);
+graph.addEdge(se, bras, 5);
+graph.addEdge(bras, luz, 10);
+graph.addEdge(bras, carrao, 9);
+graph.addEdge(luz, tatuape, 20);
+graph.addEdge(carrao, tatuape, 22);
+graph.addEdge(tatuape, paraiso, 30);
 
 graph.print();
 

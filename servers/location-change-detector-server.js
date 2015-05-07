@@ -3,7 +3,6 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var MongoOplog = require('mongo-oplog');
-var oplog = MongoOplog('mongodb://localhost:27017/local', 'appmetro.trains').tail();
 
 var locationChangeDetector = function createLocationChangeDetectorServer(options) {
 	var port = options.port || 3812;
@@ -13,6 +12,8 @@ var locationChangeDetector = function createLocationChangeDetectorServer(options
 	});
 
 	io.on('connection', function(socket) {
+		var oplog = MongoOplog('mongodb://localhost:27017/local', 'appmetro.trains').tail();
+
 		socket.on('trackTrain', function(trainId) {
 			console.log('Tracking trainId: ' + trainId);
 			
@@ -23,6 +24,10 @@ var locationChangeDetector = function createLocationChangeDetectorServer(options
 					socket.emit('trainLocationUpdate', latitude, longitude);
 				}
 			});
+		});
+
+		socket.on('disconnect', function() {
+			oplog.stop();
 		});
 	});
 }

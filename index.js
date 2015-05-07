@@ -12,7 +12,8 @@ var createIonicAppServer = require('./servers/ionic-app-server');
 var startLocationUpdaterScript = require('./servers/location-updater-server');
 
 
-var StationNetwork = require('./lib/station-network');
+setTimeout(function() {
+	var StationNetwork = require('./lib/station-network');
 global.stationNetwork = new StationNetwork();
 
 /*
@@ -52,3 +53,4 @@ stationNetwork.on('stationGraphWasBuilt', function() {
 createIonicAppServer({
 	port: 4800
 });
+}, 2000);
