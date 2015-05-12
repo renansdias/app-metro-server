@@ -14,43 +14,43 @@ var startLocationUpdaterScript = require('./servers/location-updater-server');
 
 setTimeout(function() {
 	var StationNetwork = require('./lib/station-network');
-global.stationNetwork = new StationNetwork();
+	global.stationNetwork = new StationNetwork();
 
-/*
- * Before we move on to set up our server, we need to make sure that
- * our station graph was built. The stationNetwork object will have to be
- * accessible throughout the app (so the graph is built just once).
- */
-stationNetwork.on('stationGraphWasBuilt', function() {
-	console.log('Station Graph was built!');
+	/*
+	 * Before we move on to set up our server, we need to make sure that
+	 * our station graph was built. The stationNetwork object will have to be
+	 * accessible throughout the app (so the graph is built just once).
+	 */
+	stationNetwork.on('stationGraphWasBuilt', function() {
+		console.log('Station Graph was built!');
 
-	load('models', {cwd: 'app'})
-		.then('controllers', {cwd: 'app'})
-		.then('routes', {cwd: 'app'})
-		.into(app);
+		load('models', {cwd: 'app'})
+			.then('controllers', {cwd: 'app'})
+			.then('routes', {cwd: 'app'})
+			.into(app);
 
-	// Create the location change detector server
-	createLocationChangeDetectorServer({
-		port: 3812
+		// Create the location change detector server
+		createLocationChangeDetectorServer({
+			port: 3812
+		});
+
+		// Start train location updater script
+
+		startLocationUpdaterScript({
+			port: 3912
+		});
+
+		server.listen(3700, function() {
+			console.log('Main server is running on port ' + 3700);
+		});
 	});
 
-	// Start train location updater script
-
-	startLocationUpdaterScript({
-		port: 3912
+	/**
+	 * Calling this function will start the ionic app server, which
+	 * means we'll be able to access the ionic app without running
+	 * ionic serve.
+	 */
+	createIonicAppServer({
+		port: 4800
 	});
-
-	server.listen(3700, function() {
-		console.log('Main server is running on port ' + 3700);
-	});
-});
-
-/**
- * Calling this function will start the ionic app server, which
- * means we'll be able to access the ionic app without running
- * ionic serve.
- */
-createIonicAppServer({
-	port: 4800
-});
 }, 2000);
