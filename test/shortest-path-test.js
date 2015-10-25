@@ -77,8 +77,6 @@ graph.addEdge(luz, tatuape, 20);
 graph.addEdge(carrao, tatuape, 22);
 graph.addEdge(tatuape, paraiso, 30);
 
-graph.print();
-
 setTimeout(function() {
 	var dijkstra = new ShortestPath(graph);
 	var path = dijkstra.findShortestPathBetween(corinthiansItaquera.vertexId, paraiso.vertexId);

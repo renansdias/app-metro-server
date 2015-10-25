@@ -57,12 +57,6 @@ var locationChangeDetector = function createLocationChangeDetectorServer(options
 				}
 			});
 		});
-
-		// socket.on('disconnect', function() {
-		// 	// oplog.stop();
-		// 	console.log('Connection CLOSED!!!');
-		// 	socket.removeAllListeners();
-		// });
 	});
 }
 
